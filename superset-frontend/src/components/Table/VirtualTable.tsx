@@ -42,7 +42,6 @@ const StyledCell = styled('div')<{ height?: number }>(
   text-overflow: ellipsis;
   padding-left: ${theme.gridUnit * 2}px;
   padding-right: ${theme.gridUnit}px;
-  border-bottom: 1px solid ${theme.colors.grayscale.light3};
   transition: background 0.3s;
   line-height: ${height}px;
   box-sizing: border-box;
@@ -53,18 +52,9 @@ const StyledTable = styled(AntTable)(
   ({ theme }) => `
     th.ant-table-cell {
       font-weight: ${theme.typography.weights.bold};
-      color: ${theme.colors.grayscale.dark1};
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
-
-    .ant-pagination-item-active {
-      border-color: ${theme.colors.primary.base};
-      }
-    }
-    .ant-table.ant-table-small {
-      font-size: ${theme.typography.sizes.s}px;
     }
 
     .ant-spin-nested-loading .ant-spin .ant-spin-dot {
