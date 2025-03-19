@@ -14,7 +14,7 @@ async-timeout==4.0.3
     # via
     #   -r requirements/base.in
     #   redis
-attrs==25.2.0
+attrs==25.3.0
     # via
     #   cattrs
     #   jsonschema
@@ -46,7 +46,7 @@ cattrs==24.1.2
     # via requests-cache
 celery==5.4.0
     # via apache-superset (pyproject.toml)
-certifi==2024.8.30
+certifi==2025.1.31
     # via
     #   requests
     #   selenium
@@ -158,6 +158,7 @@ greenlet==3.1.1
     # via
     #   apache-superset (pyproject.toml)
     #   shillelagh
+    #   sqlalchemy
 gunicorn==23.0.0
     # via apache-superset (pyproject.toml)
 h11==0.14.0
@@ -243,7 +244,9 @@ openpyxl==3.1.5
 ordered-set==4.1.0
     # via flask-limiter
 outcome==1.3.0.post0
-    # via trio
+    # via
+    #   trio
+    #   trio-websocket
 packaging==24.2
     # via
     #   apache-superset (pyproject.toml)
@@ -343,7 +346,7 @@ rpds-py==0.23.1
     #   referencing
 rsa==4.9
     # via google-auth
-selenium==4.27.1
+selenium==4.29.0
     # via apache-superset (pyproject.toml)
 shillelagh==1.2.18
     # via apache-superset (pyproject.toml)
@@ -382,11 +385,11 @@ sshtunnel==0.4.0
     # via apache-superset (pyproject.toml)
 tabulate==0.8.10
     # via apache-superset (pyproject.toml)
-trio==0.28.0
+trio==0.29.0
     # via
     #   selenium
     #   trio-websocket
-trio-websocket==0.11.1
+trio-websocket==0.12.2
     # via selenium
 typing-extensions==4.12.2
     # via
